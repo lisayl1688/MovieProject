@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+}
+
+#search-field {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+button, #search-bttn {
+    border: 1px solid orange;
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+#search-bttn {
+    background-color: orange;
+    color: white;
+}
+
+#wrapper {
+display: flex;
+gap: 10px;
+margin-top: 50px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+#wrapper div {
+    background-color: rgb(216, 220, 137);
+    border-radius: 20px;
+    padding: 40px;
+    width: 200px;
+}
