@@ -1007,6 +1007,9 @@ const yearUp = document.getElementById('year-up') ?? new HTMLElement();
 const yearDown = document.getElementById('year-down') ?? new HTMLElement();
 const bestRate = document.getElementById('best-rate') ?? new HTMLElement();
 const wrapper = document.getElementById('wrapper') ?? new HTMLElement();
+const inputButton = document.getElementById('add-bttn') ?? new HTMLElement();
+const inputFeld = document.getElementById('input-field') as HTMLInputElement;
+
 
 function searchInMovies(){
     wrapper.innerHTML = '';
@@ -1021,10 +1024,10 @@ searchButton.addEventListener('click', (event: MouseEvent) => {
     searchInMovies();
 });
 
-function yearUpFunction() {
+function yearUpFunction(){
     wrapper.innerHTML = '';
     let sortedUpArray = [];
-    sortedUpArray = movies.sort((a, b) => a[1] - b[1]);
+    sortedUpArray = movies.sort((a:any, b:any) => a[1] - b[1]);
     
     arrayForEach(sortedUpArray);
 }
@@ -1037,7 +1040,7 @@ yearUp.addEventListener('click', (event: MouseEvent) => {
 function yearDownFunction() {
     wrapper.innerHTML = '';
     let sortedDownArray = [];
-    sortedDownArray = movies.sort((a, b) => b[1] - a[1]);
+    sortedDownArray = movies.sort((a:any, b:any) => b[1] - a[1]);
     
     arrayForEach(sortedDownArray);
 }
@@ -1049,7 +1052,7 @@ yearDown.addEventListener('click', (event: MouseEvent) => {
 function bestRateFunction() {
     wrapper.innerHTML = '';
     let bestRateArray = [];
-    bestRateArray = movies.sort((a, b) => b[5] - a[5]);
+    bestRateArray = movies.sort((a:any, b:any) => b[5] - a[5]);
     
     arrayForEach(bestRateArray)
 }
@@ -1059,8 +1062,8 @@ bestRate.addEventListener('click', (event: MouseEvent) => {
     bestRateFunction();
 });
 
-function arrayForEach(array) {
-    array.forEach((movie) => {
+function arrayForEach(array:any) {
+    array.forEach((movie:any) => {
         const divFuerFilms = document.createElement('div');
         const filmTitle = document.createElement('h2');
         const filmYear = document.createElement('p');
@@ -1086,7 +1089,25 @@ function arrayForEach(array) {
     });
 }
 
+// const input = [inputFeld.value]
+// function newFilm(input[0], input[1], input[2], input[3], input[4], input[5]) {
+   
 
+//     const newFilmArray = [];
+//     newFilmArray.push(input[0]);
+//     newFilmArray.push(input[1]);
+//     newFilmArray.push(input[2]);
+//     newFilmArray.push(input[3]);
+//     newFilmArray.push(input[4]);
+//     newFilmArray.push(input[5]);
+
+//     movies.push(newFilmArray)
+// }
+
+// newFilmButton.addEventListener('click', (event: MouseEvent) => {
+//     event.preventDefault();
+//     newFilm();
+// });
 
 
 

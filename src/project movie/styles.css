@@ -42,3 +42,7 @@ flex-wrap: wrap;
     padding: 40px;
     width: 200px;
 }
+
+#input-field {
+    width: 300px;
+}
