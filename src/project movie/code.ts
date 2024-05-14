@@ -1007,8 +1007,8 @@ const yearUp = document.getElementById('year-up') ?? new HTMLElement();
 const yearDown = document.getElementById('year-down') ?? new HTMLElement();
 const bestRate = document.getElementById('best-rate') ?? new HTMLElement();
 const wrapper = document.getElementById('wrapper') ?? new HTMLElement();
-const inputButton = document.getElementById('add-bttn') ?? new HTMLElement();
-const inputFeld = document.getElementById('input-field') as HTMLInputElement;
+// const inputButton = document.getElementById('add-bttn') ?? new HTMLElement();
+// const inputFeld = document.getElementById('input-field') as HTMLInputElement;
 
 
 function searchInMovies(){
